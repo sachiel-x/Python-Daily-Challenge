@@ -4,11 +4,8 @@
 
 
 
-# def divisions(n, divisor):
-num = int(input("Enter a number for division: "))
+def divisions(n, divisor):
+    
+    number_of_times = len([ divisor**i for i in range(1, n) if divisor**i <= n and n % divisor**i == 0])
 
-div = int(input("Enter the divider: "))
-
-print(num//div)
-
-    # return number_of_times
+    return number_of_times
