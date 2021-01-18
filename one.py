@@ -5,7 +5,8 @@
 
 
 def divisions(n, divisor):
-    
     number_of_times = len([ divisor**i for i in range(1, n) if divisor**i <= n and n % divisor**i == 0])
-
+    print(number_of_times)
     return number_of_times
+
+divisions(27, 5)
